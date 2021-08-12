@@ -1,19 +1,17 @@
-//Script for Mixed Messages
-
 function generateMessage() {
   //Make arrays of outputs
   const messages = [
-    "Your day will be great!",
-    "Your day will be rubbish!",
-    "Your day will be pretty long!",
-    "Your day will be horrible!!!",
+    "Today is going to be a good day!",
+    "Carpe diem...",
+    "Will Vy get to 300 followers?",
+    "People have unfollowed Vy for a few days now",
     "You'll have an ok day!",
   ];
 
   const colors = ["red", "pink", "purple", "green", "blue"];
 
   const num = ["25", "46", "7000", "89", "55"];
-  //Generate random numbers for each array
+
   let randomNum1 = Math.floor(Math.random() * 5);
   let randomNum2 = Math.floor(Math.random() * 5);
   let randomNum3 = Math.floor(Math.random() * 5);
@@ -22,11 +20,9 @@ function generateMessage() {
   let randColor = colors[randomNum2];
   let randNum = num[randomNum3];
 
-  // Grab id elements from the HTML Document and change them
   let dayMessage = document.getElementById("day");
   dayMessage.innerHTML = randMessage;
 
-  //This changes the color on the line
   let colorMessage = document.getElementById("color");
   if (randColor == "red") {
     colorMessage.style.color = "red";

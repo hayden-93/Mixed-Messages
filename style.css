@@ -19,3 +19,7 @@ div {
 #message {
   margin-bottom: 40px;
 }
+
+button {
+  background-color: aqua;
+}
